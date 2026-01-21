@@ -521,9 +521,14 @@
     </div>
 
     <div class="contact-wrapper">
+
+      <!-- LEFT SIDE -->
       <div class="contact-info">
         <h2>Let's Talk</h2>
-        <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Feel free to reach out!</p>
+        <p>
+          I'm always open to discussing new projects, creative ideas,
+          or opportunities to collaborate. Feel free to reach out!
+        </p>
 
         <div class="contact-methods">
           <div class="contact-method">
@@ -533,40 +538,30 @@
               <a href="mailto:priyavora69@gmail.com">priyavora69@gmail.com</a>
             </div>
           </div>
-
-          <div class="contact-method">
-            <div class="contact-icon">📱</div>
-            <div class="contact-details">
-              <h4>Phone</h4>
-              <a href="tel:+916352076252">+91 6352076252</a>
-            </div>
-          </div>
-
-          <div class="contact-method">
-            <div class="contact-icon">📍</div>
-            <div class="contact-details">
-              <h4>Location</h4>
-              <p>Rajkot, Gujarat, India</p>
-            </div>
-          </div>
         </div>
 
         <div class="social-links">
           <a href="https://github.com/priyavora46" target="_blank" class="social-link" title="GitHub">
             <i class="fab fa-github"></i>
           </a>
+
           <a href="https://linkedin.com/in/priyavora" target="_blank" class="social-link" title="LinkedIn">
             <i class="fab fa-linkedin-in"></i>
           </a>
-         
+
           <a href="mailto:priyavora69@gmail.com" class="social-link" title="Email">
             <i class="fas fa-envelope"></i>
           </a>
         </div>
       </div>
 
+      <!-- RIGHT SIDE FORM -->
       <div class="contact-form">
-        <form id="contactForm">
+        <form
+          action="https://formspree.io/f/xkoogykn"
+          method="POST"
+        >
+
           <div class="form-group">
             <label for="name">Your Name</label>
             <input type="text" id="name" name="name" placeholder="John Doe" required>
@@ -588,8 +583,10 @@
           </div>
 
           <button type="submit" class="submit-btn">Send Message</button>
+
         </form>
       </div>
+
     </div>
   </div>
 </section>
@@ -665,13 +662,7 @@ scrollTopBtn.addEventListener('click', () => {
 });
 
 // Contact Form Submission
-const contactForm = document.getElementById('contactForm');
 
-contactForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  alert('Thank you for your message! I will get back to you soon.');
-  contactForm.reset();
-});
 
 // Intersection Observer for Animations
 const observerOptions = {
